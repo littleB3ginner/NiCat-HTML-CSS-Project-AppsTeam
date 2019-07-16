@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Newsletter</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		body{
+			margin:0;
+			background-color:#efefef;
+		}
+		.center{
+			text-align:center;
+
+		}
+		.clear{
+			clear: both;
+		}
+		/*Header section*/
+		div#header{
+			background-image:url("bg-image.jpg");
+			font-family:'Raleway',sans-serif;
+			padding-top: 30px;
+			padding-bottom: 80px;
+		}
+		div#flag{
+			background-image: url('flag.png');
+			width: 321px;
+			height: 78px;
+			margin: 0px auto;
+			padding: 25px;
+		}
+		div#flag_text{
+			color: #0776b0;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		div#title{
+			width: 50%;
+			margin: 0px auto;
+		}
+		h1{
+			color: #fff;
+			text-transform: uppercase;
+			text-shadow: 0px 0px 20px #000;
+			font-size: 50px;
+			font-family: 'Montserrat',sans-serif;
+			margin: 0px;
+		}
+		h3{
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 20px;
+			margin: 0px;
+
+		}
+		/*Content main section*/
+		div#maincontent{
+			width: 640px;
+			margin: 0px auto;
+			background-color: white;
+			position: relative;
+			z-index: 1;
+		}
+		/*Sponsor section*/
+		div#sponsor{
+			background-color: #e8e5ce;
+			font-family:'Raleway',sans-serif;
+			padding: 20px;
+			margin-top: -40px;
+		}
+		div.sponsor_logo img{
+			max-width: 240px;
+			border: 3px solid #1d4a5f;
+			float: left;
+			margin: 25px;
+		}
+		h3.sponsor_title{
+			color: #076bb0;
+			text-transform: uppercase;
+			font-size: 20px;
+			font-family: 'Raleway',sans-serif;
+		}
+		div#content{
+			background-color: #fff;
+			
+		}
+		/*Key research section*/
+
+		.text1{
+			width:285px;
+			height: 300px;
+			background-color: #efefef;
+			text-align: center; 
+			padding-top: 1px;
+		}
+		.text1 h4{
+			color: #0766b0;
+		}
+		.text1 p{
+			color: #969487;
+		}
+		.text1 a{
+			color: #0766b0;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+			float:left;
+			font-size: 14px;
+			margin-left: 21px;
+		}
+		.holder{
+			float: left;
+			padding-left: 18px;
+		}
+		.holder1{
+			overflow: hidden;
+			padding-left: 32px;
+		}
+		.main img {
+			padding-top: 20px;
+		}
+		/*Words section*/
+		#words_wisdom{
+			margin-top: 25px;
+		}
+		p.word_para{
+			color: #b3b3b3;
+		}
+		/*Upcoming events*/
+		#events{
+			background-color: #a6d8f3;
+			height: 266px;
+			font-size: 16px;
+
+		}
+		#events h3{
+			padding: 10px;
+		}
+
+		.box_event{
+			width: 135px;
+			height: 69px;
+			background-color: white;
+			box-shadow: 0px 3px 1px #888888;
+			float: left;
+			margin-left: 20px;
+			font-size: 17.5px;
+		}
+		.box_event1{
+			width: 135px;
+			height: 69px;
+			background-color: white;
+			box-shadow: 0px 3px 3px #888888;
+			float: left;
+			margin-left: 20px;
+			margin-top: 18px;
+			font-size: 17.5px;
+		}
+		.span_text{
+			color: #b3b3b3;
+		}
+		.bolding{
+			font-weight: bold; 
+		}
+		.button_events{
+			width: 135px;
+			height: 40px;
+			background-color: #0d69b2;
+			box-shadow: 0px 3px 3px #888888;
+			display: inline-table;
+			margin-top: 12px;
+			font-size: 18px;
+			font-weight: bold;
+			color: white;
+			text-transform: uppercase;
+		}
+		.button_events p {
+			margin-top: 9px;
+			margin-bottom: 0px;
+		}
+		/* Congress sponsors */
+		div#congres{
+			background-color: #e8e5ce;
+			font-family:'Raleway',sans-serif;
+			padding: 10px;
+		}
+		.sponsor_logo2{
+			margin-left: 20px;
+		}
+		div.sponsor_logo2 img{
+			max-width: 175px;
+			float: left;
+			margin: 10px;
+		}
+		.shadow{
+			border: 3px solid #b3b3b3;
+		}
+		.shadom_gold{
+			border: 3px solid #eac986;
+		}
+		.sponsor_img{
+			margin-top: 5px;
+		}
+		.goldS{
+			margin-right: 40px;
+			margin-left: 5px;
+			font-weight: bold;
+		}
+		.silverS{
+			margin-left: 5px;
+			font-weight: bold;
+		}
+		/*footer*/
+		.main_footer{
+			background-color: #4d4d4d;
+			width:100%;	
+			margin-top: -35px;
+		}
+		#footer{
+			width: 640px;
+			margin: 0px auto;
+			color:white;
+			font-family:'Raleway',sans-serif;
+			display: table;
+
+		}
+		.footer_margin{
+			margin-top: 50px;
+		}
+		.logo {
+			width: 100px;
+			float: left;
+			margin-right: 20px;
+		}
+		.signature{
+			float: left;
+			
+		}
+		.side_text{
+			float: right;
+		}
+		.side_text p {
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- header section-->
+	<div id="header" >
+		<div id="flag" class="center">
+			<div id="flag_text">December 1<span>st</span>, 2019.</div>
+		</div>
+		<div id="title" class="center">
+			<img src="logoIT.png" alt="logoITAcademy" align="center">
+			<h1>NiCat Academy</h1>
+			<h3>Software developer education training</h3>
+		</div>
+	</div>
+	<!-- end header section-->
+
+	<!--Content section-->
+	<div id="maincontent">
+		<!--sponsors-->
+		<div id="content">
+			<div id="sponsor" class="center">
+				<h3 class="sponsor_title">Sustaining sponsors</h3>
+				<div class="sponsor_logo" style="margin-left: 10px;">
+					<img src="autodesk-logo.jpg" alt="logo for autodesk">
+					<img src="newforma.jpg" alt="newforma logo">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--end sponsors-->
+
+		<!--Key research-->
+		<div class="main">
+			<!--Prva dva-->
+			<div class="holder">
+				<img src="placeholder.png" alt="holder picture">
+				<div class="text1">
+					<h4>Key Research Results<br>Available on LCI Website</h4>
+
+					<p>Based on two LCHundred studies<br>conducted by the University of<br>Minnesota and Dodge Date and<br>Analytics respectivity we now<br>have additional research-backed<br>analysis indicating that.</p>
+					<p>-Learn and Integreted Project<br>Delivery IFD</p>
+					<hr width="75%">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+
+			<div class="holder1">
+				<img src="placeholder.png" alt="holder picture">
+				<div class="text1">
+					<h4>Key Research Results<br>Available on LCI Website</h4>
+
+					<p>Based on two LCHundred studies<br>conducted by the University of<br>Minnesota and Dodge Date and<br>Analytics respectivity we now<br>have additional research-backed<br>analysis indicating that.</p>
+					<p>-Learn and Integreted Project<br>Delivery IFD</p>
+					<hr width="75%">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+
+			<!--Druga dva-->
+			<div class="holder">
+				<img src="placeholder.png" alt="holder picture">
+				<div class="text1">
+					<h4>Key Research Results<br>Available on LCI Website</h4>
+
+					<p>Based on two LCHundred studies<br>conducted by the University of<br>Minnesota and Dodge Date and<br>Analytics respectivity we now<br>have additional research-backed<br>analysis indicating that.</p>
+					<p>-Learn and Integreted Project<br>Delivery IFD</p>
+					<hr width="75%">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+
+			<div class="holder1">
+				<img src="placeholder.png" alt="holder picture">
+				<div class="text1">
+					<h4>Key Research Results<br>Available on LCI Website</h4>
+
+					<p>Based on two LCHundred studies<br>conducted by the University of<br>Minnesota and Dodge Date and<br>Analytics respectivity we now<br>have additional research-backed<br>analysis indicating that.</p>
+					<p>-Learn and Integreted Project<br>Delivery IFD</p>
+					<hr width="75%">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+
+			<!-- Poslednja dva-->
+			<div class="holder">
+				<img src="placeholder.png" alt="holder picture">
+				<div class="text1">
+					<h4>Key Research Results<br>Available on LCI Website</h4>
+
+					<p>Based on two LCHundred studies<br>conducted by the University of<br>Minnesota and Dodge Date and<br>Analytics respectivity we now<br>have additional research-backed<br>analysis indicating that.</p>
+					<p>-Learn and Integreted Project<br>Delivery IFD</p>
+					<hr width="75%">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+
+			<div class="holder1">
+				<img src="placeholder.png" alt="holder picture">
+				<div class="text1">
+					<h4>Key Research Results<br>Available on LCI Website</h4>
+
+					<p>Based on two LCHundred studies<br>conducted by the University of<br>Minnesota and Dodge Date and<br>Analytics respectivity we now<br>have additional research-backed<br>analysis indicating that.</p>
+					<p>-Learn and Integreted Project<br>Delivery IFD</p>
+					<hr width="75%">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+			<hr width="85%" >
+		</div>
+
+		<!--words wisdom-->
+		<div id="words_wisdom" class="center">
+			<h3 class="sponsor_title">Words Of Wisdom</h3>
+			<p class="word_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non faucibus felis,<br> eu porttitor purus. Vestibulum luctus quam nec orci ultrices, eget facilisis<br> mi rhoncus. Integer vel ultrices massa, eu rhoncus leo. Quisque nec posuere ante.<br>Fusce porta, lacus et porta imperdiet, libero leo tincidunt sapien.Aliquam cursus at lectus <br>ut iaculis. Diam turpis non turpis. Praesent sit amet placerat felis. 
+			</p>
+		</div>
+		<!-- key end-->
+
+		<!--Upcoming events-->
+		<div id="events" class="center">
+			<h3 class="sponsor_title">Upcoming Events</h3>
+			<div class="box_event"><p><span class="bolding">December<br>8th<br></span><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></p></div>
+
+			<div class="box_event"><span class="bolding">December 8th</span><br><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></div>
+
+			<div class="box_event"><span class="bolding">December 8th</span><br><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></div>
+
+			<div class="box_event"><span class="bolding">December 8th</span><br><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></div>
+
+			<div class="box_event1"><span class="bolding">December 8th</span><br><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></div>
+
+			<div class="box_event1"><span class="bolding">December 8th</span><br><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></div>
+
+			<div class="box_event1"><span class="bolding">December 8th</span><br><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></div>
+
+			<div class="box_event1"><span class="bolding">December 8th</span><br><span class="span_text">A lean coffe<br>(Upper Midwest Cup)</span></div>
+
+			<div class="button_events"><p>All Events</p></div>
+
+		</div>
+		<!-- Upcoming events end-->
+
+		<!--Congress sponsors-->
+		<div id="congres" class="center">
+			<h3 class="sponsor_title">Congress sponsors</h3>
+			<div class="sponsor_logo2">
+				<img class="shadom_gold" src="autodesk-logo.jpg" alt="logo autodesk">
+				<img class="shadom_gold" src="newforma.jpg" alt="logo newforma">
+				<img class="shadom_gold" src="autodesk-logo.jpg" alt="logo autodesk">
+
+				<img class="shadow" src="newforma.jpg" alt="logo newforma">
+				<img class="shadom_gold" src="autodesk-logo.jpg" alt="logo autodesk">
+				<img class="shadow" src="newforma.jpg" alt="logo newforma">
+			</div>
+			<div class="clear"></div>
+			<div class="sponsor_img"><img src="gold.png" alt="gold picture"><span class="goldS">Gold sponsors</span><img src="silver.png" alt="silver picture"><span class="silverS">Silver sponsors</span></div>
+		</div>
+		<!--Congress sponsors end-->
+	</div>
+
+	<!--Footer-->
+	<div class="main_footer">
+		<div id="footer">
+			<div class="footer_margin">
+				<img class="logo" src="logo.png" alt="logo picture">
+				<div class="signature">
+					<p style="margin-top: 0px">Sincerely<br><img src="potpis.png" alt="signature"><br>John.C.Malkovich, CAE<br>Executive Director</p>
+					<p>Pft: 1423 750-3567 0:<br>derin@nicatconstruction.org</p>
+				</div>
+				<div class="side_text center">
+					<p>NiCat Cluster Academy is<br>located at North 35th<br>Street,12th Floor,Nis,SRB<br>2220g</p>
+					<p>085-387-300<br>info@nicatconstruction.org<br>
+
+						<a href="#"><img src="fb.png" alt="facebook logo"></a>
+						<a href="#"><img src="in.png" alt="instagram logo"></a>
+						<a href="#"><img src="tw.png" alt="twitter logo"></a>
+						<a href="#"><img src="gp.png" alt="google plus logo"></a>
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end footer-->
+</body>
+</html>
